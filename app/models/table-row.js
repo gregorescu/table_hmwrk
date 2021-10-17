@@ -1,4 +1,3 @@
-import { tracked } from '@glimmer/tracking';
 import BaseRowModel from '../components/cool-table/models/base-row-model';
 
 export const AvailableStatus = 'available';

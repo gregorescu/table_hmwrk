@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+}
+
+.general-container {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    -moz-box-shadow: 0 0 3px #777777;
+    -webkit-box-shadow: 0 0 3px #777777;
+    box-shadow: 0 0 3px #777777;
+}
+
+.controls-bar {
+    width: 100%;
+    font-size: 1.4em;
+
+    padding: 5px 15px;
+    
+    border-top: 1px solid #999999;    
+    border-left: 1px solid #999999;    
+    border-right: 1px solid #999999;
+}
+
+.controls-bar__download {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.controls-bar__download .material-icons {
+    vertical-align: middle;
+}
+
+.cool-table {
+    width: 100%;
+}
+
+.cool-table tr {
+    border-top: 1px solid #999999;
+    cursor: pointer;
+}
+
+.cool-table .cool-table__row--selected {
+    background-color: #aaaaaa;
+}
+
+.cool-table thead tr th {
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+/* .cool-table tbody tr:nth-child(2n + 1) {
+    background-color: #dddddd;
+} */
+
+.cool-table tr th, .cool-table tr td {
+    padding: 5px 15px;
+    border-top: 1px solid #999999;
+}
+
+.cool-table tr th:first-of-type, .cool-table tr td:first-of-type {
+    border-left: 1px solid #999999;
+}
+
+.cool-table tr th:last-of-type, .cool-table tr td:last-of-type {
+    border-right: 1px solid #999999;
+}
+
+.cool-table tr:last-of-type td {
+    border-bottom: 1px solid #999999;
+}
+
+.table-cell__status p {
+    display: inline-block;
+}
+
+.table-cell__status .circle {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 20px;
+    background-color: #00ff00;
+
+    display: inline-block;
+
+    margin-left: -25px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+}

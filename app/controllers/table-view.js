@@ -6,7 +6,6 @@ import TableRow, { AvailableStatus } from '../models/table-row';
 const FieldTypesMap = Object.freeze({
   selected: {
     dataKey: 'isSelected',
-    dependencyDataKey: 'status',
     component: 'cool-table/table-checkbox',
     customClass: 'table-cell__selected',
     headerText: '',

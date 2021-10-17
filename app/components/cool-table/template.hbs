@@ -14,7 +14,7 @@
         {{#each-in @config as |key column|}}
           <td class='cool-table__cell {{column.customClass}}'>
               {{#let (component column.component) as |CellComponent|}}
-                <CellComponent @value={{get row column.dataKey}} @dependecyValue={{get row column.dependencyDataKey}}/>
+                <CellComponent @value={{get row column.dataKey}}/>
               {{/let}}
           </td>
         {{/each-in}}

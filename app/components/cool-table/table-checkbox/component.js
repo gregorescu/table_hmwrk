@@ -12,6 +12,5 @@ export default class CoolTableComponent extends Component {
 
     get readOnly() {
         return false;
-        // return this.args.dependecyValue !== AvailableStatus;
     }
 }

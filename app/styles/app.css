@@ -49,6 +49,10 @@ body {
     cursor: pointer;
 }
 
+.cool-table tr:hover {
+    background-color: #cccccc;
+}
+
 .cool-table .cool-table__row--selected {
     background-color: #aaaaaa;
 }

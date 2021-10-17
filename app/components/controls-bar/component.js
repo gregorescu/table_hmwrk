@@ -10,7 +10,11 @@ export default class CoolTableComponent extends Component {
   }
 
   get checked() {
-    return this.args.selectedCount > 0;
+    return this.args.selectedCount === this.args.maximumCount;
+  }
+
+  get indeterminate() {
+      return this.args.selectedCount > 0 && this.args.selectedCount < this.args.maximumCount;
   }
 
   get checkboxLabel() {

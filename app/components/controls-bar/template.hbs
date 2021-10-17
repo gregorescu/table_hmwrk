@@ -1,0 +1,7 @@
+<div class="controls-bar">
+    <Input id="controls-bar-checkbox" @type='checkbox' @checked={{this.checked}}/>
+    <label for="controls-bar-checkbox">{{this.checkboxLabel}}</label>
+    {{#if this.args.selectedCount}}
+        <p class="controls-bar__download" {{on "click" this.args.downloadSelected}} ><i class="material-icons">file_download</i>Download Selected</p>
+    {{/if}}
+</div>

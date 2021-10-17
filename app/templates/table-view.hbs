@@ -1,0 +1,16 @@
+{{page-title 'TableView'}}
+<div class='general-container'>
+  <ControlsBar
+    @selectedCount={{this.selectedCount}}
+    @maximumCount={{this.maximumCount}}
+    @selectAll={{this.selectAll}}
+    @deselectAll={{this.deselectAll}}
+    @downloadSelected={{this.downloadSelected}}
+  />
+  <CoolTable
+    @data={{this.tableRowsData}}
+    @config={{this.tableConfig}}
+    @selectRow={{this.selectRow}}
+  />
+</div>
+{{outlet}}

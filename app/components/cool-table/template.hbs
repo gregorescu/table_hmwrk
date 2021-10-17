@@ -1,0 +1,24 @@
+<table class='cool-table' cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      {{#each-in @config as |key column|}}
+        <th class='cool-table__cell'>
+          {{column.headerText}}
+        </th>
+      {{/each-in}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#each-in @data as |rowId row|}}
+      <tr class='{{if row.isSelected 'cool-table__row--selected'}}' {{on "click" (fn @selectRow rowId) }}>
+        {{#each-in @config as |key column|}}
+          <td class='cool-table__cell {{column.customClass}}'>
+              {{#let (component column.component) as |CellComponent|}}
+                <CellComponent @value={{get row column.dataKey}} @dependecyValue={{get row column.dependencyDataKey}}/>
+              {{/let}}
+          </td>
+        {{/each-in}}
+      </tr>
+    {{/each-in}}
+  </tbody>
+</table>

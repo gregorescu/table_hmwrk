@@ -13,14 +13,5 @@ module('Integration | Component | cool-table/table-text', function (hooks) {
     await render(hbs`<CoolTable::TableText />`);
 
     assert.dom(this.element).hasText('');
-
-    // Template block usage:
-    await render(hbs`
-      <CoolTable::TableText>
-        template block text
-      </CoolTable::TableText>
-    `);
-
-    assert.dom(this.element).hasText('template block text');
   });
 });

@@ -10,6 +10,7 @@ body {
 
 .general-container {
     margin-top: 100px;
+    min-width: 600px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -63,10 +64,6 @@ body {
     font-size: 1.2em;
 }
 
-/* .cool-table tbody tr:nth-child(2n + 1) {
-    background-color: #dddddd;
-} */
-
 .cool-table tr th, .cool-table tr td {
     padding: 5px 15px;
     border-top: 1px solid #999999;
@@ -101,4 +98,24 @@ body {
     margin-right: 5px;
 
     vertical-align: middle;
+}
+
+.table-cell__selected {
+    width: 10px;
+}
+
+.table-cell__name {
+    width: 100px;
+}
+
+.table-cell__device {
+    width: 100px;
+}
+
+.table-cell__path {
+    width: auto;
+}
+
+.table-cell__status {
+    width: 100px;
 }

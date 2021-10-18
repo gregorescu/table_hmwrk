@@ -27,7 +27,7 @@ export default class CoolTableComponent extends Component {
     } else if (count === maximumCount) {
       label = 'All Selected';
     } else {
-      label = `${count} Selected`;
+      label = `Selected ${count}`;
     }
 
     return label;
